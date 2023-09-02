@@ -1,16 +1,19 @@
 // Import required dependencies and hooks
 import React from 'react';
 import PropTypes from 'prop-types';
-import { usePathname } from "next/navigation";
+import {  usePathname } from 'next-intl/client';
+import {Link} from '@/navigation';
+import {useSelectedLayoutSegment} from "next/navigation";
 
 // The HeaderLink component is responsible for rendering a link in the header.
 // It takes the 'page' as a prop and checks if the current page matches the provided page name.
-const HeaderLink = ({ page }) => {
+const HeaderLink = ({ page, link }) => {
     // Get the current pathname using the 'usePathname' hook from Next.js
-    const pathname = usePathname();
+    const selectedLayoutSegment = useSelectedLayoutSegment();
+    const pathname = selectedLayoutSegment ? `/${selectedLayoutSegment}` : '/';
 
     // Check if the current page matches the provided page name
-    const isActive = pathname === page || (pathname === "/" && page === "home");
+    const isActive = pathname === link;
 
     // TailwindCSS classes for styling and responsiveness
     const activeTextClass = isActive ? 'text-black' : 'text-gray';
@@ -22,8 +25,10 @@ const HeaderLink = ({ page }) => {
 
     return (
         <li className={liClasses}>
+            <Link href={link}>
             <span className="text-primary">#</span>
             <span className={spanClasses}>{page}</span>
+            </Link>
         </li>
     );
 };

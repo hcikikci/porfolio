@@ -17,7 +17,6 @@ export const metadata = {
 
 export default async function RootLayout({children, params}) {
     const locale = useLocale();
-
     if (params.locale !== locale) {
         notFound();
     }

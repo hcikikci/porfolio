@@ -14,7 +14,7 @@ import IconTwitter from "@/app/components/atoms/Icons/IconTwitter";
 // It includes the Logo, Header Links, and Language Selector.
 const Header = () => {
     // Initialize translation, routing, and locale hooks
-    const t = useTranslations('header');
+    const t = useTranslations('breadcrumbs');
     const router = useRouter();
     const pathname = usePathname();
     const locale = useLocale();
@@ -54,10 +54,10 @@ const Header = () => {
             </div>
 
             <ul className={`${responsiveClasses} md:space-y-0 space-y-5 my-auto  ${menuOpen ? 'block' : 'hidden md:flex'}`}>
-                <HeaderLink page={t("home")} />
-                <HeaderLink page={t("works")} />
-                <HeaderLink page={t("about me")} />
-                <HeaderLink page={t("contacts")} />
+                <HeaderLink page={t("home.title")} link={"/"}/>
+                <HeaderLink page={t("projects.title")} link={"/projects"}/>
+                <HeaderLink page={t("about-me.title")} link={"/about-me"} />
+                <HeaderLink page={t("contact.title")} link={"/contact"} />
                 <div className="w-fit">
                     <Select className={"text-2xl md:text-base"} options={languages} defaultValue={languages.find(element => element.value === locale)} onChange={switchLanguage} />
                 </div>

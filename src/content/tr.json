@@ -1,8 +1,20 @@
 {
-  "header": {
-    "home": "ana sayfa",
-    "works": "projeler",
-    "about me": "hakkımda",
-    "contacts": "iletişim"
+  "breadcrumbs": {
+    "home": {
+      "title": "anasayfa",
+      "description": "Ana sayfa"
+    },
+    "projects": {
+      "title": "projeler",
+      "description": "Projelerimin listesi"
+    },
+    "about-me": {
+      "title": "hakkımda",
+      "description": "Ben kimim?"
+    },
+    "contact": {
+      "title": "iletişim",
+      "description": "Benimle iletişime geçin"
+    }
   }
 }

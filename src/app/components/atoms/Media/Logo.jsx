@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from "@/navigation";
 
 // The Logo component is responsible for rendering the logo of the application.
 // It consists of an SVG and a text element.
@@ -8,7 +9,7 @@ const Logo = () => {
     const responsiveTextClasses = 'text-md md:text-base font-bold text-black';
 
     return (
-        <div className="flex space-x-2 place-items-center">
+        <Link href={"/"} className="flex space-x-2 place-items-center">
             <svg
                 className={responsiveSvgClasses}
                 viewBox="0 0 16 17"
@@ -25,7 +26,7 @@ const Logo = () => {
             <h2 className={responsiveTextClasses}>
                 Halitcan Çıkıkçı
             </h2>
-        </div>
+        </Link>
     );
 };
 

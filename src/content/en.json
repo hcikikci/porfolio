@@ -1,8 +1,26 @@
 {
   "header": {
     "home": "home",
-    "works": "works",
-    "about me": "about me",
-    "contacts": "contacts"
+    "projects": "projects",
+    "about-me": "about me",
+    "contact": "contacts"
+  },
+  "breadcrumbs": {
+    "home": {
+      "title": "home",
+      "description": "Home page"
+    },
+    "projects": {
+      "title": "projects",
+      "description": "List of my projects"
+    },
+    "about-me": {
+      "title": "about me",
+      "description": "Who am i?"
+    },
+    "contact": {
+      "title": "contact",
+      "description": "Contact with me"
+    }
   }
 }
