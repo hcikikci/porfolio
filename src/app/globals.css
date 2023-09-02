@@ -2,9 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-.container {
+.containercustom {
   @apply mx-auto md:px-40 px-10;
 }
+
+@media (max-width: 1060px) {
+  .containercustom {
+    @apply px-20;
+  }
+}
+
+@media (max-width: 900px)  {
+  .containercustom {
+    @apply px-5;
+  }
+}
+
 
 .select input {
   font-family: "Fira Code", "monospace"!important;

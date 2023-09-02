@@ -32,7 +32,7 @@ const Header = () => {
     const responsiveClasses = 'flex flex-col md:flex-row md:space-x-8 md:place-items-center text-left';
 
     return (
-        <div className={"flex md:justify-between md:items-center py-8 flex-col md:flex-row " + (menuOpen ? "absolute px-10 md:static bg-white z-10 md:h-fit md:bg-transparent w-full h-full inset-0" : "")}>
+        <div className={"flex md:justify-between md:items-center py-8 flex-col md:flex-row " + (menuOpen ? "absolute px-5 md:px-0 md:static bg-white z-10 md:h-fit md:bg-transparent w-full h-full inset-0" : "")}>
             <div className="flex w-full md:w-fit justify-between">
                 <Logo />
                 <button onClick={() => setMenuOpen(!menuOpen)} className="md:hidden">

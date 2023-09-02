@@ -31,7 +31,7 @@ export default async function RootLayout({children, params}) {
 
     return (
         <html lang={locale} >
-        <body className={firaCode.className + " container"} suppressHydrationWarning={true}>
+        <body className={firaCode.className + " containercustom"} suppressHydrationWarning={true}>
         <NextIntlClientProvider locale={locale} messages={messages}>
             <Header/>
             {children}
