@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .container {
-  @apply mx-auto px-40;
+  @apply mx-auto md:px-40 px-10;
 }
 
 .select input {
