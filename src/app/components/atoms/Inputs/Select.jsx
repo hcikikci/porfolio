@@ -14,6 +14,7 @@ const Select = ({ options, defaultValue, onChange, ...props }) => {
             color: "#787878",
             boxShadow: "none",
             fontFamily: firaCode,
+            background: "rgba(255, 255, 255, 0.7)"
         }),
         menu: (provided) => ({
             ...provided,

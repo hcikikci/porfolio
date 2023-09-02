@@ -16,5 +16,15 @@
       "title": "iletişim",
       "description": "Benimle iletişime geçin"
     }
+  },
+  "landing": {
+    "title": "<colored>Halit</colored> bir <colored>ürün tasarımcısı</colored> ve <colored>full-stack geliştiricisidir.</colored>",
+    "description": "Hedefi teknolojiyi yaratıcılıkla birleştirerek ortaya çıkaracağı projelerle insanlığa faydalı olmaktır.",
+    "button": "Benimle iletişime geçin!!",
+    "currently-working": "Şu anda <bold>portfolyo</bold> üzerinde çalışıyor."
+  },
+  "wordoftheday": {
+    "quote": "Güçlü beyinler fikirleri tartışır, sıradan beyinler olayları tartışır, zayıf beyinler ise kişileri tartışır.",
+    "author": "Socrates"
   }
 }

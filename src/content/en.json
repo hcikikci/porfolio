@@ -1,10 +1,4 @@
 {
-  "header": {
-    "home": "home",
-    "projects": "projects",
-    "about-me": "about me",
-    "contact": "contacts"
-  },
   "breadcrumbs": {
     "home": {
       "title": "home",
@@ -22,5 +16,15 @@
       "title": "contact",
       "description": "Contact with me"
     }
+  },
+  "landing": {
+    "title": "<colored>Halit</colored> is a <colored>product designer</colored> and <colored>full-stack developer</colored>",
+    "description": "His goal is to be useful to humanity with the projects he will invent by combining technology with creativity.",
+    "button": "Contact me!!",
+    "currently-working": "Currently working on <bold>Portfolio</bold>"
+  },
+  "wordoftheday": {
+    "quote": "Strong minds discuss ideas, average minds discuss events, weak minds discuss people.",
+    "author": "Socrates"
   }
 }

@@ -1,5 +1,5 @@
 import '../globals.css'
-import {Fira_Code} from 'next/font/google'
+import {Montserrat, Inter} from 'next/font/google'
 import Header from "@/app/components/organisms/Header";
 import {NextIntlClientProvider, useLocale} from 'next-intl';
 import {notFound} from 'next/navigation';
@@ -8,7 +8,7 @@ export function generateStaticParams() {
     return [{locale: 'en'}, {locale: 'de'}];
 }
 
-export const firaCode = Fira_Code({ subsets: ['latin'] })
+export const firaCode = Montserrat({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Create Next App',
@@ -29,8 +29,8 @@ export default async function RootLayout({children, params}) {
     }
 
     return (
-        <html lang={locale} >
-        <body className={firaCode.className + " containercustom"} suppressHydrationWarning={true}>
+        <html lang={locale}  >
+        <body className={firaCode.className + " containercustom bg-[#EBECFF] bg-[url(/shapesbg.png)] bg-contain"} suppressHydrationWarning={true}>
         <NextIntlClientProvider locale={locale} messages={messages}>
             <Header/>
             {children}
