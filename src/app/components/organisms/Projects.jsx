@@ -8,8 +8,7 @@ const Projects = ({onPage=true}) => {
             {onPage ? (<SectionHeader title={"complete-apps"} />) :  <SectionHeader title={"projects"} viewAllLink="/projects"/>}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-x-4 px-12 md:px-0 gap-y-8 my-8">
                 <ProjectCard/>
-                <ProjectCard/>
-                <ProjectCard/>
+
             </div>
             {!onPage && (
                 <div className="mt-20">

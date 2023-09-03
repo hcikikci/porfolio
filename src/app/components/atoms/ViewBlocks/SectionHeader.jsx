@@ -9,8 +9,8 @@ const SectionHeader = ({title, viewAllLink, dontShowHR=false}) => {
     return (
         <div className="text-3xl font-medium md:grid md:grid-cols-2 flex">
             <div className="flex items-center grow md:space-x-10 space-x-5 pr-5 md:col-span-1">
-                <div className="flex-shrink">
-                    <span className="text-primary">#</span>{t(title+".title")}
+                <div className="flex-shrink whitespace-nowrap">
+                    <span className="text-primary ">#</span>{t(title+".title")}
                 </div>
                 {!dontShowHR && <hr className="border-gray border-opacity-50 border-t-2 w-full"/>}
             </div>
