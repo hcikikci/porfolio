@@ -3,6 +3,7 @@ import {Montserrat, Inter} from 'next/font/google'
 import Header from "@/app/components/organisms/Header";
 import {NextIntlClientProvider, useLocale} from 'next-intl';
 import {notFound} from 'next/navigation';
+import Footer from "@/app/components/organisms/Footer";
 
 export function generateStaticParams() {
     return [{locale: 'en'}, {locale: 'de'}];
@@ -30,10 +31,13 @@ export default async function RootLayout({children, params}) {
 
     return (
         <html lang={locale}  >
-        <body className={firaCode.className + " containercustom bg-[#EBECFF] bg-[url(/shapesbg.png)] bg-contain"} suppressHydrationWarning={true}>
+        <body className={firaCode.className + " bg-[#EBECFF] bg-[url(/shapesbg.png)] bg-contain"} suppressHydrationWarning={true}>
         <NextIntlClientProvider locale={locale} messages={messages}>
-            <Header/>
-            {children}
+            <Header className="containercustom"/>
+            <div className="containercustom">
+                {children}
+            </div>
+            <Footer/>
         </NextIntlClientProvider>
         </body>
         </html>

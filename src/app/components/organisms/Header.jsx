@@ -1,5 +1,5 @@
 "use client";
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import Logo from "@/app/components/atoms/Media/Logo";
 import HeaderLink from "@/app/components/atoms/ViewBlocks/HeaderLink";
 import Select from "@/app/components/atoms/Inputs/Select";
@@ -9,10 +9,11 @@ import IconGithub from "@/app/components/atoms/Icons/IconGithub";
 import IconEmail from "@/app/components/atoms/Icons/IconEmail";
 import IconLinkedIn from "@/app/components/atoms/Icons/IconLinkedIn";
 import IconTwitter from "@/app/components/atoms/Icons/IconTwitter";
+import Social from "@/app/components/atoms/ViewBlocks/Social";
 
 // The Header component is responsible for rendering the header section of the website.
 // It includes the Logo, Header Links, and Language Selector.
-const Header = () => {
+const Header = ({className}) => {
     // Initialize translation, routing, and locale hooks
     const t = useTranslations('breadcrumbs');
     const router = useRouter();
@@ -28,11 +29,36 @@ const Header = () => {
         router.replace(`/${pathname}`, { locale: e.value });
     };
 
+    useEffect(() => {
+        function handleResize() {
+            if (window.innerWidth <= 768) {
+                if (menuOpen) {
+                    document.body.style.overflow = "hidden";
+                } else {
+                    document.body.style.overflow = "auto";
+                }
+            } else {
+                document.body.style.overflow = "auto";
+            }
+        }
+
+        // İlk mountta ve her menuOpen değişikliğinde handleResize çalışacak
+        handleResize();
+
+        // Ekran boyutu değişirse handleResize tekrar çalışacak
+        window.addEventListener('resize', handleResize);
+
+        // Cleanup
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, [menuOpen]);
+
     // TailwindCSS classes for responsiveness
     const responsiveClasses = 'flex flex-col md:flex-row md:space-x-8 md:place-items-center text-left';
 
     return (
-        <div className={"flex md:justify-between md:items-center py-8 flex-col md:flex-row " + (menuOpen ? "absolute px-5 md:px-0 md:static bg-white z-20 md:h-fit md:bg-transparent w-full h-full inset-0" : "")}>
+        <div className={"flex md:justify-between md:items-center py-8 flex-col md:flex-row " + (className && className) + (menuOpen ? " absolute overscroll-none px-5 md:static bg-white z-20 md:h-fit md:bg-transparent md:w-full w-screen h-screen inset-0" : "")}>
             <div className="flex w-full md:w-fit justify-between">
                 <Logo />
                 <button onClick={() => setMenuOpen(!menuOpen)} className="md:hidden">
@@ -61,12 +87,7 @@ const Header = () => {
                 <div className="w-fit">
                     <Select className={"text-2xl md:text-base"} options={languages} defaultValue={languages.find(element => element.value === locale)} onChange={switchLanguage} />
                 </div>
-                <div className="flex w-full md:hidden place-items-baseline justify-around !mt-8">
-                    <IconLinkedIn size="medium"/>
-                    <IconGithub size="medium"/>
-                    <IconTwitter size="medium"/>
-                    <IconEmail size="medium"/>
-                </div>
+                <Social size={"medium"} className={"w-full justify-around !mt-8 md:hidden"}/>
             </ul>
         </div>
     );

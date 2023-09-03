@@ -15,6 +15,22 @@
     "contact": {
       "title": "contact",
       "description": "Contact with me"
+    },
+    "skills": {
+      "title": "skills",
+      "description": "My skills"
+    },
+    "complete-apps": {
+      "title": "complete-apps",
+      "description": "My complete apps"
+    },
+    "small-projects": {
+      "title": "small-projects",
+      "description": "My small projects"
+    },
+    "media": {
+      "title": "Media",
+      "description": "My media"
     }
   },
   "landing": {
@@ -26,5 +42,24 @@
   "wordoftheday": {
     "quote": "Strong minds discuss ideas, average minds discuss events, weak minds discuss people.",
     "author": "Socrates"
+  },
+  "about-me": {
+    "article": "Hello there! My name is Halit and I enjoy creating things that make people’s lives easier. I have been dealing with computers since childhood and I continue this passion with my university education. My university education continues now. At the same time, I’m preparing for my new company, Unique Dot. I take pleasure in improving myself every day.I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I’m focused on building accessible, human-centered products.",
+    "button": "Read more -->",
+    "follow-me": "You can follow my videos about software development on my youtube channel:"
+  },
+  "contact": {
+    "article": "I’m interested in freelance opportunities. However, if you have other request or question, don’t hesitate to contact me",
+    "message-me": "Message me here"
+  },
+  "common": {
+    "view-all": "View all",
+    "identity": "Product designer and full-stack developer",
+    "live": "Live",
+    "media": "Media",
+    "languages": "Languages",
+    "others": "Others",
+    "databases": "Databases",
+    "frameworks": "Frameworks"
   }
 }

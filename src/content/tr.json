@@ -15,6 +15,22 @@
     "contact": {
       "title": "iletişim",
       "description": "Benimle iletişime geçin"
+    },
+    "skills": {
+      "title": "yetenekleri",
+      "description": "Benim yeteneklerim"
+    },
+    "complete-apps": {
+      "title": "uygulamalar",
+      "description": "My complete apps"
+    },
+    "small-projects": {
+      "title": "küçük projeler",
+      "description": "My small projects"
+    },
+    "media": {
+      "title": "medya",
+      "description": "My media"
     }
   },
   "landing": {
@@ -26,5 +42,24 @@
   "wordoftheday": {
     "quote": "Güçlü beyinler fikirleri tartışır, sıradan beyinler olayları tartışır, zayıf beyinler ise kişileri tartışır.",
     "author": "Socrates"
+  },
+  "about-me": {
+    "article": "Selamlar! Adım Halit ve insanların hayatını kolaylaştıracak şeyler yaratmaktan keyif alıyorum. Çocukluğumdan beri bilgisayarlarla ilgileniyorum ve bu tutkumu üniversite eğitimim ile de sürdürüyorum. Şu anda üniversite eğitimim devam ediyor. Bir yandan da yeni şirketim Unique Dot'a hazırlanıyorum. Her gün kendimi geliştirmenin mutluluğunu yaşıyorum.\nOlağanüstü dijital deneyimler oluşturma (ve ara sıra tasarlama) konusunda uzmanlaşmış bir yazılım mühendisiyim. Şu anda erişilebilir, insan odaklı ürünler geliştirmeye odaklanıyorum.",
+    "button": "Devamını oku -->",
+    "follow-me": "Yazılım geliştirme ile ilgili videolarımı youtube kanalımdan takip edebilirsiniz:"
+  },
+  "contact": {
+    "article": "Freelance çalışma fırsatlarıyla ilgileniyorum. Ancak başka bir isteğiniz veya sorunuz varsa da benimle iletişime geçmekten çekinmeyin",
+    "message-me": "Bana buradan mesaj atabilirsiniz"
+  },
+  "common": {
+    "view-all": "Tümünü görüntüle",
+    "identity": "Ürün tasarımcısı ve full-stack developer",
+    "live": "Canlı",
+    "media": "Medya",
+    "languages": "Diller",
+    "others": "Diğerleri",
+    "databases": "Veritabanları",
+    "frameworks": "Frameworkler"
   }
 }
