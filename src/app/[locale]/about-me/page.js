@@ -1,6 +1,6 @@
-import Breadcrumbs from "@/app/components/atoms/ViewBlocks/Breadcrumbs";
-import AboutMe from "@/app/components/organisms/AboutMe";
-import Skills from "@/app/components/organisms/Skills";
+import Breadcrumbs from "../../components/atoms/ViewBlocks/Breadcrumbs";
+import AboutMe from "../../components/organisms/AboutMe";
+import Skills from "../../components/organisms/Skills";
 
 export default function page() {
     return (

@@ -1,12 +1,9 @@
+'use client';
 import React from 'react';
-import Logo from "@/app/components/atoms/Media/Logo";
-import IconEmail from "@/app/components/atoms/Icons/IconEmail";
+import Logo from "../atoms/Media/Logo";
 import Link from "next/link";
-import IconLinkedIn from "@/app/components/atoms/Icons/IconLinkedIn";
-import IconGithub from "@/app/components/atoms/Icons/IconGithub";
-import IconTwitter from "@/app/components/atoms/Icons/IconTwitter";
 import {useTranslations} from "next-intl";
-import Social from "@/app/components/atoms/ViewBlocks/Social";
+import Social from "../atoms/ViewBlocks/Social";
 
 const Footer = ({className}) => {
     const t = useTranslations('common');

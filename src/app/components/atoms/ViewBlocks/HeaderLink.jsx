@@ -1,8 +1,7 @@
-// Import required dependencies and hooks
+"use client";
 import React from 'react';
 import PropTypes from 'prop-types';
-import {  usePathname } from 'next-intl/client';
-import {Link} from '@/navigation';
+import Link from 'next-intl/link';
 import {useSelectedLayoutSegment} from "next/navigation";
 
 // The HeaderLink component is responsible for rendering a link in the header.

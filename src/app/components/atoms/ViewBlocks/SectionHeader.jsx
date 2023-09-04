@@ -1,6 +1,7 @@
+'use client';
 import React from 'react';
-import {Link} from "@/navigation";
-import {firaCode} from "@/app/components/atoms/ViewBlocks/ProjectCard";
+import Link from 'next-intl/link';
+import {firaCode} from "../../atoms/ViewBlocks/ProjectCard";
 import {useTranslations} from "next-intl";
 
 const SectionHeader = ({title, viewAllLink, dontShowHR=false}) => {

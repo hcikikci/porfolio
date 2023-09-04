@@ -1,10 +1,8 @@
+'use client';
 import React from 'react';
-import SectionHeader from "@/app/components/atoms/ViewBlocks/SectionHeader";
-import Button from "@/app/components/atoms/Inputs/Button";
-import {firaCode} from "@/app/components/atoms/ViewBlocks/ProjectCard";
-import YouTubePlayer from "@/app/components/atoms/Media/YoutubePlayer";
-import IconDiscord from "@/app/components/atoms/Icons/IconDiscord";
-import IconEmail from "@/app/components/atoms/Icons/IconEmail";
+import SectionHeader from "../atoms/ViewBlocks/SectionHeader";
+import IconDiscord from "../atoms/Icons/IconDiscord";
+import IconEmail from "../atoms/Icons/IconEmail";
 import Link from "next/link";
 import {useTranslations} from "next-intl";
 

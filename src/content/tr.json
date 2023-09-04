@@ -60,6 +60,40 @@
     "languages": "Diller",
     "others": "Diğerleri",
     "databases": "Veritabanları",
-    "frameworks": "Frameworkler"
+    "frameworks": "Frameworkler",
+    "not-deployed": "Yayınlanmadı"
+  },
+  "small-projects": {
+    "ConfigparserModules": {
+      "title": "Configparser Modules",
+      "description": "Config Dosyaları üzerinde temel işlemleri kolaylıkla gerçekleştirmek için geliştirilmiş modüller içerir.",
+      "tools": "<item>Python</item><item>Configparser</item>",
+      "github": "https://github.com/hcikikci/Configparser-Modules"
+    },
+    "WindowsModules": {
+      "title": "Windows Modules",
+      "description": "Pygetwindow modüllerinin yeniden derlenmiş modülü.",
+      "tools": "<item>Python</item><item>PyGetWindow</item>",
+      "github": "https://github.com/hcikikci/Window-Modules"
+    },
+    "Virtual-Assistant": {
+      "title": "Virtual Assistant",
+      "description": "Python ile geliştirilmiş sanal asistan.",
+      "tools": "<item>Python</item><item>Speech Recognition</item><item>PyAudio</item><item>PyGame</item>",
+      "github": "https://github.com/hcikikci/Virtual-Assistant"
+    },
+    "TaskManager": {
+      "title": "Task Manager",
+      "description": "Trello API için komut arayüzü, görevleri takip etmeye ve organize etmeye yönelik araç.",
+      "tools": "<item>Python</item><item>Trello</item>",
+      "github": "https://github.com/hcikikci/TaskManager"
+    }
+  },
+  "complete-apps": {
+    "AgileMaster": {
+      "title": "Agile Master",
+      "description": "Yapay Zeka Destekli Proje Yönetim Sistemi",
+      "tools": "<item>NextJS</item><item>NodeJS</item><item>Typescript</item><item>Express</item><item>TailwindCSS</item><item>MaterialUI</item><item>PostgreSQL</item>"
+    }
   }
 }

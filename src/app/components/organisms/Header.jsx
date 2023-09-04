@@ -1,15 +1,11 @@
 "use client";
 import React, {useEffect, useState} from 'react';
-import Logo from "@/app/components/atoms/Media/Logo";
-import HeaderLink from "@/app/components/atoms/ViewBlocks/HeaderLink";
-import Select from "@/app/components/atoms/Inputs/Select";
+import Logo from "../atoms/Media/Logo";
+import HeaderLink from "../atoms/ViewBlocks/HeaderLink";
+import Select from "../atoms/Inputs/Select";
 import { useLocale, useTranslations } from 'next-intl';
 import { useRouter, usePathname } from 'next-intl/client';
-import IconGithub from "@/app/components/atoms/Icons/IconGithub";
-import IconEmail from "@/app/components/atoms/Icons/IconEmail";
-import IconLinkedIn from "@/app/components/atoms/Icons/IconLinkedIn";
-import IconTwitter from "@/app/components/atoms/Icons/IconTwitter";
-import Social from "@/app/components/atoms/ViewBlocks/Social";
+import Social from "../atoms/ViewBlocks/Social";
 
 // The Header component is responsible for rendering the header section of the website.
 // It includes the Logo, Header Links, and Language Selector.
@@ -26,7 +22,7 @@ const Header = ({className}) => {
 
     // Function to switch the language
     const switchLanguage = (e) => {
-        router.replace(`/${pathname}`, { locale: e.value });
+        router.replace(`${pathname}`, { locale: e.value });
     };
 
     useEffect(() => {

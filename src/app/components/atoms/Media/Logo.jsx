@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from "@/navigation";
+import Link from 'next-intl/link';
 
 // The Logo component is responsible for rendering the logo of the application.
 // It consists of an SVG and a text element.

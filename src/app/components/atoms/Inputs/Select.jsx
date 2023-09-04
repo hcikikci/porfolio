@@ -2,7 +2,7 @@
 import React, {useId} from 'react';
 import PropTypes from 'prop-types';
 import BaseSelect from 'react-select';
-import { firaCode } from "@/app/[locale]/layout";
+import { firaCode } from "../../../[locale]/layout";
 
 // Define the Select component
 const Select = ({ options, defaultValue, onChange, ...props }) => {

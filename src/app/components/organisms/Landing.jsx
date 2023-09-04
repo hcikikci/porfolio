@@ -1,9 +1,9 @@
+'use client';
 import React from 'react';
 import {useTranslations} from "next-intl";
-import {Link} from "@/navigation";
+import Link from 'next-intl/link';
 import Image from "next/image";
-import {LogoIcon} from "@/app/components/atoms/Media/Logo";
-import Dots from "@/app/components/atoms/Media/Dots";
+import {LogoIcon} from "../atoms/Media/Logo";
 
 const Landing = () => {
     const t = useTranslations('landing');

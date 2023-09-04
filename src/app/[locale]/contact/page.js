@@ -1,7 +1,8 @@
-import Breadcrumbs from "@/app/components/atoms/ViewBlocks/Breadcrumbs";
-import Contact from "@/app/components/organisms/Contact";
-import SectionHeader from "@/app/components/atoms/ViewBlocks/SectionHeader";
-import Social from "@/app/components/atoms/ViewBlocks/Social";
+import Breadcrumbs from "../../components/atoms/ViewBlocks/Breadcrumbs";
+import Contact from "../../components/organisms/Contact";
+import SectionHeader from "../../components/atoms/ViewBlocks/SectionHeader";
+import Social from "../../components/atoms/ViewBlocks/Social";
+export const dynamic = 'force-static'
 
 export default function page() {
 

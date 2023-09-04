@@ -6,8 +6,10 @@ const withNextIntl = require('next-intl/plugin')(
 );
 
 const nextConfig = {
-  experimental: {
-    appDir: true,
+    output: 'export',
+    images: { unoptimized: true },
+    experimental: {
+        appDir: true,
   },
 }
 

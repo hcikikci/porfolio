@@ -1,7 +1,8 @@
+'use client';
 import React from 'react';
-import SectionHeader from "@/app/components/atoms/ViewBlocks/SectionHeader";
-import {LogoIcon} from "@/app/components/atoms/Media/Logo";
-import Dots from "@/app/components/atoms/Media/Dots";
+import SectionHeader from "../atoms/ViewBlocks/SectionHeader";
+import {LogoIcon} from "../atoms/Media/Logo";
+import Dots from "../atoms/Media/Dots";
 import {useTranslations} from "next-intl";
 
 const Skills = () => {

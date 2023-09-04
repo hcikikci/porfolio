@@ -1,9 +1,10 @@
+'use client';
 import React from 'react';
-import IconLinkedIn from "@/app/components/atoms/Icons/IconLinkedIn";
-import IconGithub from "@/app/components/atoms/Icons/IconGithub";
-import IconTwitter from "@/app/components/atoms/Icons/IconTwitter";
-import IconEmail from "@/app/components/atoms/Icons/IconEmail";
-import IconDiscord from "@/app/components/atoms/Icons/IconDiscord";
+import IconLinkedIn from "../Icons/IconLinkedIn";
+import IconGithub from "../Icons/IconGithub";
+import IconTwitter from "../Icons/IconTwitter";
+import IconEmail from "../Icons/IconEmail";
+import IconDiscord from "../Icons/IconDiscord";
 import Link from "next/link";
 
 const Social = ({withNicknames, className, size="small"}) => {

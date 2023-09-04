@@ -1,5 +1,6 @@
+'use client';
 import React from 'react';
-import IconQuotes from "@/app/components/atoms/Icons/IconQuotes";
+import IconQuotes from "../atoms/Icons/IconQuotes";
 import {useTranslations} from "next-intl";
 
 const WordOfTheDay = () => {

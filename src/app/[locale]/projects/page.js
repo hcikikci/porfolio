@@ -1,5 +1,5 @@
-import Breadcrumbs from "@/app/components/atoms/ViewBlocks/Breadcrumbs";
-import Projects from "@/app/components/organisms/Projects";
+import Breadcrumbs from "../../components/atoms/ViewBlocks/Breadcrumbs";
+import Projects from "../../components/organisms/Projects";
 
 export default function page() {
   return (
