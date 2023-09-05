@@ -34,23 +34,24 @@
     }
   },
   "landing": {
-    "title": "<colored>Halit</colored> is a <colored>product designer</colored> and <colored>full-stack developer</colored>",
-    "description": "His goal is to be useful to humanity with the projects he will invent by combining technology with creativity.",
-    "button": "Contact me!!",
-    "currently-working": "Currently working on <bold>Portfolio</bold>"
+    "title": "<colored>Halit</colored> is an experienced <colored>product designer</colored> and <colored>full-stack developer</colored>.",
+    "description": "I focus on blending technology and creativity to create sustainable solutions that simplify human life.",
+    "button": "Start Working With Me",
+    "currently-working": "Currently working on <bold>Agile Master</bold>"
   },
   "wordoftheday": {
     "quote": "Strong minds discuss ideas, average minds discuss events, weak minds discuss people.",
     "author": "Socrates"
   },
   "about-me": {
-    "article": "Hello there! My name is Halit and I enjoy creating things that make people’s lives easier. I have been dealing with computers since childhood and I continue this passion with my university education. My university education continues now. At the same time, I’m preparing for my new company, Unique Dot. I take pleasure in improving myself every day.I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I’m focused on building accessible, human-centered products.",
-    "button": "Read more -->",
-    "follow-me": "You can follow my videos about software development on my youtube channel:"
+    "article-short": "Hello, I'm Halit. I'm devoted to improving myself in the fields of product design and software engineering. I value the importance of being ever-curious and creative. My goal is to simplify people's lives by combining user-focused design principles with technology. Accessibility and user experience are my top priorities in the work I do.",
+    "button": "Learn More",
+    "follow-me": "I share my thoughts on software and design on my YouTube channel. Feel free to follow.",
+    "article-long": "Hello, I'm Halit. I'm deeply passionate about product design and software engineering, with an ongoing commitment to personal growth in these fields. I recognize the value of continuous learning and creative problem-solving. By merging user-focused design principles with technology, I aim to make people's lives easier. Accessibility and user experience are pillars in my approach to projects. During my university years and beyond, I have gained practical experience by participating in various projects ranging from web development to mobile applications and UI/UX design. Additionally, I am working on launching my new venture. In this journey, I'm sharing what I learn and experience through blog posts and YouTube videos. I believe that teaching as you learn can inspire others too. I also make time for social responsibility projects, as I believe technology can not only benefit individuals but can make a positive impact on society as a whole. If you're interested in freelance projects or collaborative opportunities, please don't hesitate to reach out. I'm confident that together, we can create something amazing!"
   },
   "contact": {
-    "article": "I’m interested in freelance opportunities. However, if you have other request or question, don’t hesitate to contact me",
-    "message-me": "Message me here"
+    "article": "For freelance projects, collaboration opportunities, or other professional inquiries, feel free to get in touch.",
+    "message-me": "Send Me a Message Right Away via Social Media"
   },
   "common": {
     "view-all": "View all",

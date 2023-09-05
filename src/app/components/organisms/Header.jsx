@@ -54,7 +54,7 @@ const Header = ({className}) => {
     const responsiveClasses = 'flex flex-col md:flex-row md:space-x-8 md:place-items-center text-left';
 
     return (
-        <div className={"flex md:justify-between md:items-center py-8 flex-col md:flex-row " + (className && className) + (menuOpen ? " absolute overscroll-none px-5 md:static bg-white z-20 md:h-fit md:bg-transparent md:w-full w-screen h-screen inset-0" : "")}>
+        <header className={"flex md:justify-between md:items-center py-8 flex-col md:flex-row " + (className && className) + (menuOpen ? " absolute overscroll-none px-5 md:static bg-white z-20 md:h-fit md:bg-transparent md:w-full w-screen h-screen inset-0" : "")}>
             <div className="flex w-full md:w-fit justify-between">
                 <Logo />
                 <button onClick={() => setMenuOpen(!menuOpen)} className="md:hidden">
@@ -85,7 +85,7 @@ const Header = ({className}) => {
                 </div>
                 <Social size={"medium"} className={"w-full justify-around !mt-8 md:hidden"}/>
             </ul>
-        </div>
+        </header>
     );
 };
 

@@ -34,23 +34,24 @@
     }
   },
   "landing": {
-    "title": "<colored>Halit</colored> bir <colored>ürün tasarımcısı</colored> ve <colored>full-stack geliştiricisidir.</colored>",
-    "description": "Hedefi teknolojiyi yaratıcılıkla birleştirerek ortaya çıkaracağı projelerle insanlığa faydalı olmaktır.",
-    "button": "Benimle iletişime geçin!!",
-    "currently-working": "Şu anda <bold>portfolyo</bold> üzerinde çalışıyor."
+    "title": "<colored>Halit</colored>, deneyimli bir <colored>ürün tasarımcısı</colored> ve <colored>full-stack geliştirici</colored>.",
+    "description": "Teknoloji ve yaratıcılığı birleştirerek, insan hayatını kolaylaştıran sürdürülebilir çözümler üretmeye odaklanıyorum.",
+    "button": "Benimle Çalışmaya Başlayın",
+    "currently-working": "Şu anda <bold>Agile Master</bold> üzerinde çalışıyorum."
   },
   "wordoftheday": {
     "quote": "Güçlü beyinler fikirleri tartışır, sıradan beyinler olayları tartışır, zayıf beyinler ise kişileri tartışır.",
     "author": "Socrates"
   },
   "about-me": {
-    "article": "Selamlar! Adım Halit ve insanların hayatını kolaylaştıracak şeyler yaratmaktan keyif alıyorum. Çocukluğumdan beri bilgisayarlarla ilgileniyorum ve bu tutkumu üniversite eğitimim ile de sürdürüyorum. Şu anda üniversite eğitimim devam ediyor. Bir yandan da yeni şirketim Unique Dot'a hazırlanıyorum. Her gün kendimi geliştirmenin mutluluğunu yaşıyorum.\nOlağanüstü dijital deneyimler oluşturma (ve ara sıra tasarlama) konusunda uzmanlaşmış bir yazılım mühendisiyim. Şu anda erişilebilir, insan odaklı ürünler geliştirmeye odaklanıyorum.",
-    "button": "Devamını oku -->",
-    "follow-me": "Yazılım geliştirme ile ilgili videolarımı youtube kanalımdan takip edebilirsiniz:"
+    "article-short": "Merhaba, ben Halit. Ürün tasarımı ve yazılım mühendisliği konularına ilgi duyan ve bu alanlarda kendini geliştirmeye adamış biriyim. Her zaman öğrenmeye açık olmanın ve yaratıcı bir yaklaşım sergilemenin değerini biliyorum. Kullanıcı odaklı tasarım ilkeleriyle teknolojiyi birleştirerek, insanların hayatını kolaylaştırmayı hedefliyorum. Erişilebilirlik ve kullanıcı deneyimi, yaptığım işlerde öncelik verdiğim konular arasında.",
+    "button": "Daha Fazla Bilgi",
+    "follow-me": "Yazılım ve tasarım üzerine düşüncelerimi YouTube kanalımda paylaşıyorum, takip edebilirsiniz.",
+    "article-long": "Merhaba, ben Halit. Ürün tasarımı ve yazılım mühendisliği konularına ilgi duyan ve bu alanlarda kendini geliştirmeye adamış biriyim. Her zaman öğrenmeye açık olmanın ve yaratıcı bir yaklaşım sergilemenin değerini biliyorum.Kullanıcı odaklı tasarım ilkeleriyle teknolojiyi birleştirerek, insanların hayatını kolaylaştırmayı hedefliyorum. Erişilebilirlik ve kullanıcı deneyimi, yaptığım işlerde öncelik verdiğim konular arasında.Üniversite eğitimim sırasında ve sonrasında farklı projelerde yer alarak pratik deneyim kazandım. Bunlar arasında web geliştirme, mobil uygulamalar ve kullanıcı ara yüzü tasarımı gibi farklı alanlar var.Bir yandan da yeni girişimim için çalışıyorum. Bu süreçte öğrendiklerimi ve deneyimlerimi blog yazıları ve YouTube videoları ile paylaşıyorum. Öğrendikçe öğretmenin, başkalarına da ilham verebileceğine inanıyorum.Sosyal sorumluluk projelerine de zaman ayırmayı önemsiyorum, çünkü teknolojinin sadece bireyler için değil, toplum için de olumlu etkiler yaratabileceğine inanıyorum. Freelance projeler veya işbirliği fırsatları için benimle iletişime geçmekten çekinmeyin. Hep birlikte harika şeyler yaratabileceğimize inanıyorum!"
   },
   "contact": {
-    "article": "Freelance çalışma fırsatlarıyla ilgileniyorum. Ancak başka bir isteğiniz veya sorunuz varsa da benimle iletişime geçmekten çekinmeyin",
-    "message-me": "Bana buradan mesaj atabilirsiniz"
+    "article": "Freelance projeler, işbirliği fırsatları veya diğer profesyonel istekler için benimle iletişime geçebilirsiniz.",
+    "message-me": "Sosyal Medya ile Hemen Mesaj Gönderin"
   },
   "common": {
     "view-all": "Tümünü görüntüle",

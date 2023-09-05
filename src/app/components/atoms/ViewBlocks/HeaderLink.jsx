@@ -24,10 +24,12 @@ const HeaderLink = ({ page, link }) => {
 
     return (
         <li className={liClasses}>
-            <Link href={link}>
-            <span className="text-primary">#</span>
-            <span className={spanClasses}>{page}</span>
-            </Link>
+            <h2>
+                <Link href={link}>
+                    <span className="text-primary">#</span>
+                    <span className={spanClasses}>{page}</span>
+                </Link>
+            </h2>
         </li>
     );
 };

@@ -8,11 +8,11 @@ const SectionHeader = ({title, viewAllLink, dontShowHR=false}) => {
     const t = useTranslations('breadcrumbs');
     const t2 = useTranslations('common');
     return (
-        <div className="text-3xl font-medium md:grid md:grid-cols-2 flex">
+        <header className="text-3xl font-medium md:grid md:grid-cols-2 flex">
             <div className="flex items-center grow md:space-x-10 space-x-5 pr-5 md:col-span-1">
-                <div className="flex-shrink whitespace-nowrap">
+                <h2 id={title+"-section-header"} className="flex-shrink whitespace-nowrap">
                     <span className="text-primary ">#</span>{t(title+".title")}
-                </div>
+                </h2>
                 {!dontShowHR && <hr className="border-gray border-opacity-50 border-t-2 w-full"/>}
             </div>
             <p className="text-base ml-auto my-auto">
@@ -22,7 +22,7 @@ const SectionHeader = ({title, viewAllLink, dontShowHR=false}) => {
                     </Link>
                 )}
             </p>
-        </div>
+        </header>
     );
 };
 

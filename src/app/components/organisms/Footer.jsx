@@ -9,12 +9,12 @@ const Footer = ({className}) => {
     const t = useTranslations('common');
 
     return (
-        <div className={"border-t border-gray "  +  (className && className)}>
+        <footer className={"border-t border-gray "  +  (className && className)}>
             <div className="grid md:grid-cols-2 grid-cols-1 containercustom pt-8">
                 <div className="flex flex-col space-y-4">
                     <div className="flex space-x-5 place-items-center flex-wrap">
                         <Logo/>
-                        <Link target={"_blank"} href="mailto:hello@halitcancikikci.com">
+                        <Link target={"_blank"} href="mailto:hello@halitcancikikci.com" title="Email To Halitcan Çıkıkçı">
                             <span className="text-gray font-medium">hello@halitcancikikci.com</span>
                         </Link>
                     </div>
@@ -27,7 +27,7 @@ const Footer = ({className}) => {
             </div>
             <p className="text-center text-gray pt-12 pb-8">© Copyright 2023. Made by Halitcan Çıkıkçı</p>
 
-        </div>
+        </footer>
     );
 };
 

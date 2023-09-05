@@ -9,10 +9,10 @@ const Skills = () => {
     const t = useTranslations('common');
 
     return (
-        <div className="pt-20">
+        <section className="pt-20" aria-labelledby="skills-header">
             <SectionHeader title={"skills"} />
-            <div className="grid md:grid-cols-2 grid-cols-1 gap-5">
-                <div className="opacity-50 md:block hidden">
+            <div className="grid md:grid-cols-2 grid-cols-1 gap-5" aria-label="Skills section">
+                <div className="opacity-50 md:block hidden" aria-hidden="true">
                     <div className="grid grid-cols-2 gap-4 py-8">
                         <Dots  className="mt-5"/>
                         <svg width="86" height="86" viewBox="0 0 86 86" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -79,8 +79,7 @@ const Skills = () => {
                     </div>
                 </div>
             </div>
-
-        </div>
+        </section>
     );
 };
 

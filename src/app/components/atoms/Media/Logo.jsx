@@ -9,7 +9,7 @@ const Logo = () => {
     const responsiveTextClasses = 'text-md md:text-lg font-bold text-black';
 
     return (
-        <Link href={"/"} className="flex space-x-2 place-items-center">
+        <Link alt="Halitcan Çıkıkçı Logo" href={"/"} className="flex space-x-2 place-items-center">
             <svg
                 className={responsiveSvgClasses}
                 viewBox="0 0 16 17"

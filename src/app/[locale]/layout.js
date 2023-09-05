@@ -4,13 +4,10 @@ import {NextIntlClientProvider, useLocale} from 'next-intl';
 import {notFound} from 'next/navigation';
 import Header from "../components/organisms/Header";
 import Footer from "../components/organisms/Footer";
+import Head from "next/head";
 
 export const firaCode = Montserrat({ subsets: ['latin'] })
 
-export const metadata = {
-  title: 'Halitcan Çıkıkçı',
-  description: 'Halit is a product designer and full-stack developer',
-}
 
 export async function generateStaticParams() {
     return ['en', 'tr'].map((locale) => ({ locale }))
@@ -27,12 +24,12 @@ export default async function RootLayout({children, params: { locale }}) {
 
     return (
         <html lang={locale}  >
-        <head>
+        <Head>
             <meta charSet="utf-8"/>
             <meta name="viewport" content="width=device-width, initial-scale=1"/>
-            <meta name="description" content={metadata.description}/>
-            <title>Halitcan Çıkıkçı</title>
-        </head>
+            <link rel="alternate" hrefLang="en" href="/en" />
+            <link rel="alternate" hrefLang="tr" href="/tr" />
+        </Head>
             <body className={firaCode.className + " bg-[#EBECFF] bg-[url(/shapesbg.png)] bg-contain"} suppressHydrationWarning={true}>
         <NextIntlClientProvider locale={locale} messages={messages}>
             <Header className="containercustom"/>
