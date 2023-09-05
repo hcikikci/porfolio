@@ -40,6 +40,17 @@ export default async function RootLayout({children, params: { locale }}) {
             <meta name="viewport" content="width=device-width, initial-scale=1"/>
             <link rel="alternate" hrefLang="en" href="/en" />
             <link rel="alternate" hrefLang="tr" href="/tr" />
+            {/* Open Graph Meta Tags */}
+            <meta property="og:title" content="Halitcan Çıkıkçı - Product Designer & Full-Stack Developer" />
+            <meta property="og:description" content="Focused on creating sustainable solutions that make lives easier by merging technology and creativity." />
+            <meta property="og:image" content="https://halitcancikikci.com/halitcancikikci.png" />
+            <meta property="og:url" content="https://halitcancikikci.com" />
+
+            {/* Twitter Card Meta Tags */}
+            <meta name="twitter:card" content="summary_large_image" />
+            <meta name="twitter:title" content="Halitcan Çıkıkçı - Product Designer & Full-Stack Developer" />
+            <meta name="twitter:description" content="Focused on creating sustainable solutions that make lives easier by merging technology and creativity." />
+            <meta name="twitter:image" content="https://halitcancikikci.com/halitcancikikci.png" />
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{
