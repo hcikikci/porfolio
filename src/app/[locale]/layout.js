@@ -40,6 +40,30 @@ export default async function RootLayout({children, params: { locale }}) {
             <meta name="viewport" content="width=device-width, initial-scale=1"/>
             <link rel="alternate" hrefLang="en" href="/en" />
             <link rel="alternate" hrefLang="tr" href="/tr" />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        '@context': 'https://schema.org',
+                        '@type': 'Person',
+                        name: 'Halitcan Çıkıkçı',
+                        url: 'https://halitcancikikci.com',
+                        image: 'https://halitcancikikci.com/halitcancikikci.png',
+                        jobTitle: 'Full-Stack Developer and Product Designer',
+                        worksFor: {
+                            '@type': 'Organization',
+                            name: 'Self-employed'
+                        },
+                        sameAs: [
+                            'https://www.linkedin.com/in/halitcan-çıkıkçı/',
+                            'https://twitter.com/halitcancikikci',
+                            'https://github.com/hcikikci',
+                            'https://discordapp.com/users/hcikikci',
+                            'hello@halitcancikikci.com',
+                        ]
+                    })
+                }}
+            />
         </Head>
             <body className={firaCode.className + " bg-[#EBECFF] bg-[url(/shapesbg.png)] bg-contain"} suppressHydrationWarning={true}>
             <GoogleAnalytics/>
