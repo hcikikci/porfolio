@@ -11,8 +11,8 @@ export async function generateMetadata({ params }){
     // get params from route
     const { locale } = params;
 
-    const enTitle = 'Halitcan Çıkıkçı: Leading Product Designer & Full-Stack Developer';
-    const trTitle = 'Halitcan Çıkıkçı: Önde Gelen Ürün Tasarımcısı & Full-Stack Geliştirici';
+    const enTitle = 'Halitcan Çıkıkçı: Product Designer & Full-Stack Developer';
+    const trTitle = 'Halitcan Çıkıkçı: Ürün Tasarımcısı & Full-Stack Geliştirici';
 
     const enDescription = "Welcome to the official website of Halitcan Çıkıkçı. A seasoned product designer and full-stack developer, he is driving innovation at the startup 'Agile Master'. Explore his portfolio, skills, and services.";
     const trDescription = 'Halitcan Çıkıkçı\'nın resmi web sitesine hoş geldiniz. Deneyimli bir ürün tasarımcısı ve full-stack geliştirici olarak, şu anda "Agile Master" adlı startup\'da inovasyonu yönlendiriyor. Portföyü, yetenekleri ve hizmetleri keşfedin.';
