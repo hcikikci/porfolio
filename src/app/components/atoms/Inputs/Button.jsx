@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-const Button = ({ children, className, ariaLabel, ...props }) => {
+const Button = ({ children, className='', ariaLabel='', ...props }) => {
     // TailwindCSS classes for styling and responsiveness
     const baseClasses = 'px-4 py-2 border hover:bg-secondary';
     const responsiveClasses = 'md:px-6 md:py-3';
@@ -22,10 +22,5 @@ Button.propTypes = {
     ariaLabel: PropTypes.string,
 };
 
-// Default props
-Button.defaultProps = {
-    className: '',
-    ariaLabel: '',
-};
 
 export default Button;

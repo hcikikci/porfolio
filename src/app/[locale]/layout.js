@@ -1,16 +1,27 @@
+"use client";
 import '../globals.css'
 import {Montserrat, Inter} from 'next/font/google'
-import {NextIntlClientProvider, useLocale} from 'next-intl';
+import {IntlErrorCode, NextIntlClientProvider, useLocale} from 'next-intl';
 import {notFound} from 'next/navigation';
 import Header from "../components/organisms/Header";
 import Footer from "../components/organisms/Footer";
 import Head from "next/head";
+import GoogleAnalytics from "../GoogleAnalytics";
 
 export const firaCode = Montserrat({ subsets: ['latin'] })
 
-
 export async function generateStaticParams() {
     return ['en', 'tr'].map((locale) => ({ locale }))
+}
+
+function onError(error) {
+    if (error.code === IntlErrorCode.MISSING_MESSAGE) {
+        // Missing translations are expected and should only log an error
+
+    } else {
+        // Other errors indicate a bug in the app and should be reported
+        console.log(error)
+    }
 }
 
 export default async function RootLayout({children, params: { locale }}) {
@@ -31,13 +42,14 @@ export default async function RootLayout({children, params: { locale }}) {
             <link rel="alternate" hrefLang="tr" href="/tr" />
         </Head>
             <body className={firaCode.className + " bg-[#EBECFF] bg-[url(/shapesbg.png)] bg-contain"} suppressHydrationWarning={true}>
-        <NextIntlClientProvider locale={locale} messages={messages}>
-            <Header className="containercustom"/>
-            <div className="containercustom">
-                {children}
-            </div>
-            <Footer/>
-        </NextIntlClientProvider>
+            <GoogleAnalytics/>
+            <NextIntlClientProvider onError={onError} locale={locale} messages={messages}>
+                <Header className="containercustom"/>
+                    <div className="containercustom">
+                        {children}
+                    </div>
+                <Footer/>
+            </NextIntlClientProvider>
         </body>
         </html>
     )

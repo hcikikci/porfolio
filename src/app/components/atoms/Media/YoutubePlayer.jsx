@@ -20,6 +20,7 @@ const YouTubePlayer = ({ videoId }) => {
             videoId={videoId}
             onReady={onReady}
             onError={onError}
+            opts={{host: 'https://www.youtube-nocookie.com'}}
         />
     );
 };
