@@ -1,6 +1,7 @@
 import Breadcrumbs from "../../components/atoms/ViewBlocks/Breadcrumbs";
 import AboutMe from "../../components/organisms/AboutMe";
 import Skills from "../../components/organisms/Skills";
+import {metadata} from "../../[locale]/layout";
 
 export async function generateMetadata({ params }){
     // read route params then fetch data
@@ -17,6 +18,7 @@ export async function generateMetadata({ params }){
     const trKeywords = ['Halitcan Çıkıkçı Hakkımda', 'Uzmanlık Alanları', 'Web Geliştirme Deneyimi', 'Ürün Tasarımı Yetenekleri', 'Yazılım Mühendisliği', 'Kişisel İlgi Alanları'];
 
     return {
+        ...metadata,
         title: locale === "tr" ? trTitle : enTitle,
         description: locale === "tr" ? trDescription : enDescription,
         keywords: locale === "tr" ? trKeywords : enKeywords,

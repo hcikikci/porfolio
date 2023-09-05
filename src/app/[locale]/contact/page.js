@@ -2,6 +2,7 @@ import Breadcrumbs from "../../components/atoms/ViewBlocks/Breadcrumbs";
 import Contact from "../../components/organisms/Contact";
 import SectionHeader from "../../components/atoms/ViewBlocks/SectionHeader";
 import Social from "../../components/atoms/ViewBlocks/Social";
+import {metadata} from "../../[locale]/layout";
 export const dynamic = 'force-static'
 export async function generateMetadata({ params }){
     // read route params then fetch data
@@ -18,6 +19,7 @@ export async function generateMetadata({ params }){
     const trKeywords = ['Halitcan Çıkıkçı İletişim', 'Sorular', 'İş Teklifleri', 'İşbirliği Fikirleri', 'Web Geliştirme İletişim', 'Ürün Tasarım İletişim'];
 
     return {
+        ...metadata,
         title: locale === "tr" ? trTitle : enTitle,
         description: locale === "tr" ? trDescription : enDescription,
         keywords: locale === "tr" ? trKeywords : enKeywords,

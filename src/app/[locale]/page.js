@@ -4,6 +4,7 @@ import Projects from "../components/organisms/Projects";
 import Skills from "../components/organisms/Skills";
 import AboutMe from "../components/organisms/AboutMe";
 import Contact from "../components/organisms/Contact";
+import {metadata} from "../[locale]/layout";
 export const dynamic = 'force-static'
 
 export async function generateMetadata({ params }){
@@ -11,21 +12,21 @@ export async function generateMetadata({ params }){
     // get params from route
     const { locale } = params;
 
-    const enTitle = 'Halitcan Çıkıkçı: Product Designer & Full-Stack Developer';
-    const trTitle = 'Halitcan Çıkıkçı: Ürün Tasarımcısı & Full-Stack Geliştirici';
+    const enTitle = 'Halitcan Çıkıkçı - Product Designer and Full-Stack Developer';
+    const trTitle = 'Halitcan Çıkıkçı - Ürün Tasarımcısı ve Full-Stack Geliştirici';
 
-    const enDescription = "Welcome to the official website of Halitcan Çıkıkçı. A seasoned product designer and full-stack developer, he is driving innovation at the startup 'Agile Master'. Explore his portfolio, skills, and services.";
-    const trDescription = 'Halitcan Çıkıkçı\'nın resmi web sitesine hoş geldiniz. Deneyimli bir ürün tasarımcısı ve full-stack geliştirici olarak, şu anda "Agile Master" adlı startup\'da inovasyonu yönlendiriyor. Portföyü, yetenekleri ve hizmetleri keşfedin.';
+    const enDescription = 'Halitcan Çıkıkçı is a talented product designer and full-stack developer currently contributing his expertise to the innovative startup, \'Agile Master\'.';
+    const trDescription = 'Halitcan Çıkıkçı, yetenekli bir ürün tasarımcısı ve full-stack geliştirici olarak, şu anda \'Agile Master\' adlı yenilikçi startup fikri ile kariyerine katkı sağlamaktadır.';
 
-    const enKeywords = ['Halitcan Çıkıkçı Official', 'Top Product Designer', 'Expert Full-Stack Developer', 'Innovative Software Solutions', 'Web Development Services', 'Design Portfolio'];
-    const trKeywords = ['Halitcan Çıkıkçı Resmi', 'Önde Gelen Ürün Tasarımcısı', 'Uzman Full-Stack Geliştirici', 'Yenilikçi Yazılım Çözümleri', 'Web Geliştirme Hizmetleri', 'Tasarım Portföyü'];
+    const enKeywords = ['Halitcan Çıkıkçı', 'Product Designer', 'Full-Stack Developer', 'Software Projects', 'Web Development', 'Design and Coding Specialist'];
+    const trKeywords = ['Halitcan Çıkıkçı', 'Ürün Tasarımcısı', 'Full-Stack Developer', 'Yazılım Projeleri', 'Web Geliştirme', 'Tasarım ve Kodlama Uzmanı'];
 
     return {
+        ...metadata,
         title: locale === "tr" ? trTitle : enTitle,
         description: locale === "tr" ? trDescription : enDescription,
         keywords: locale === "tr" ? trKeywords : enKeywords,
     };
-
 }
 
 export default function Home() {

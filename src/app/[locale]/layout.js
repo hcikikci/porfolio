@@ -1,4 +1,3 @@
-"use client";
 import '../globals.css'
 import {Montserrat, Inter} from 'next/font/google'
 import {IntlErrorCode, NextIntlClientProvider, useLocale} from 'next-intl';
@@ -13,15 +12,28 @@ export const firaCode = Montserrat({ subsets: ['latin'] })
 export async function generateStaticParams() {
     return ['en', 'tr'].map((locale) => ({ locale }))
 }
-
-function onError(error) {
-    if (error.code === IntlErrorCode.MISSING_MESSAGE) {
-        // Missing translations are expected and should only log an error
-
-    } else {
-        // Other errors indicate a bug in the app and should be reported
-        console.log(error)
-    }
+export const metadata = {
+    metadataBase: new URL('https://halitcancikikci.com/'),
+    openGraph: {
+        title: 'Halitcan Çıkıkçı - Product Designer & Full-Stack Developer',
+        description: 'Focused on creating sustainable solutions that make lives easier by merging technology and creativity.',
+        image: 'https://halitcancikikci.com/halitcancikikci.png',
+        url: 'https://halitcancikikci.com',
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Halitcan Çıkıkçı - Product Designer & Full-Stack Developer',
+        description: 'Focused on creating sustainable solutions that make lives easier by merging technology and creativity.',
+        image: 'https://halitcancikikci.com/halitcancikikci.png',
+        url: 'https://halitcancikikci.com',
+    },
+    alternates: {
+        canonical: '/',
+        languages: {
+            'en-US': '/en',
+            'tr-TR': '/tr',
+        },
+    },
 }
 
 export default async function RootLayout({children, params: { locale }}) {
@@ -35,22 +47,8 @@ export default async function RootLayout({children, params: { locale }}) {
 
     return (
         <html lang={locale}  >
-        <Head>
-            <meta charSet="utf-8"/>
-            <meta name="viewport" content="width=device-width, initial-scale=1"/>
-            <link rel="alternate" hrefLang="en" href="/en" />
-            <link rel="alternate" hrefLang="tr" href="/tr" />
-            {/* Open Graph Meta Tags */}
-            <meta property="og:title" content="Halitcan Çıkıkçı - Product Designer & Full-Stack Developer" />
-            <meta property="og:description" content="Focused on creating sustainable solutions that make lives easier by merging technology and creativity." />
-            <meta property="og:image" content="https://halitcancikikci.com/halitcancikikci.png" />
-            <meta property="og:url" content="https://halitcancikikci.com" />
-
-            {/* Twitter Card Meta Tags */}
-            <meta name="twitter:card" content="summary_large_image" />
-            <meta name="twitter:title" content="Halitcan Çıkıkçı - Product Designer & Full-Stack Developer" />
-            <meta name="twitter:description" content="Focused on creating sustainable solutions that make lives easier by merging technology and creativity." />
-            <meta name="twitter:image" content="https://halitcancikikci.com/halitcancikikci.png" />
+            <body className={firaCode.className + " bg-[#EBECFF] bg-[url(/shapesbg.png)] bg-contain"} suppressHydrationWarning={true}>
+            <GoogleAnalytics/>
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{
@@ -75,10 +73,7 @@ export default async function RootLayout({children, params: { locale }}) {
                     })
                 }}
             />
-        </Head>
-            <body className={firaCode.className + " bg-[#EBECFF] bg-[url(/shapesbg.png)] bg-contain"} suppressHydrationWarning={true}>
-            <GoogleAnalytics/>
-            <NextIntlClientProvider onError={onError} locale={locale} messages={messages}>
+            <NextIntlClientProvider locale={locale} messages={messages}>
                 <Header className="containercustom"/>
                     <div className="containercustom">
                         {children}
