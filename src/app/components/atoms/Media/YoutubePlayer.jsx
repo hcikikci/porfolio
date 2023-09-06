@@ -16,7 +16,7 @@ const YouTubePlayer = ({ videoId }) => {
     };
 
     return (
-        <YouTube className="w-full h-full" iframeClassName="w-full h-full"
+        <YouTube loading={"lazy"} className="w-full h-full" iframeClassName="w-full h-full"
             videoId={videoId}
             onReady={onReady}
             onError={onError}

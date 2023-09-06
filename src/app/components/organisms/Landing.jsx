@@ -24,7 +24,7 @@ const Landing = () => {
             <div className="relative w-fit mx-auto flex flex-col place-items-center md:scale-100 scale-75 mt-10 md:mt-0">
                 <LogoIcon className="absolute left-0 opacity-40 -translate-x-full -ml-3 translate-y-1/2" aria-hidden="true" /> {/* Aria hidden added */}
                 <Image priority={true} className="z-10 border border-b-0 border-primary"
-                       src={"/halitcancikikci.png"}
+                       src={"/halitcancikikci.webp"}
                        alt="Halitcan Çıkıkçı - Product Designer and Full-Stack Developer"
                        width={331}
                        height={386} />

@@ -17,14 +17,14 @@ export const metadata = {
     openGraph: {
         title: 'Halitcan Çıkıkçı - Product Designer & Full-Stack Developer',
         description: 'Focused on creating sustainable solutions that make lives easier by merging technology and creativity.',
-        image: 'https://halitcancikikci.com/halitcancikikci.png',
+        image: 'https://halitcancikikci.com/halitcancikikci.webp',
         url: 'https://halitcancikikci.com',
     },
     twitter: {
         card: 'summary_large_image',
         title: 'Halitcan Çıkıkçı - Product Designer & Full-Stack Developer',
         description: 'Focused on creating sustainable solutions that make lives easier by merging technology and creativity.',
-        image: 'https://halitcancikikci.com/halitcancikikci.png',
+        image: 'https://halitcancikikci.com/halitcancikikci.webp',
         url: 'https://halitcancikikci.com',
     },
     alternates: {
@@ -47,7 +47,7 @@ export default async function RootLayout({children, params: { locale }}) {
 
     return (
         <html lang={locale}  >
-            <body className={firaCode.className + " bg-[#EBECFF] bg-[url(/shapesbg.png)] bg-contain"} suppressHydrationWarning={true}>
+            <body className={firaCode.className + " bg-[#EBECFF] bg-[url(/shapesbg.webp)] bg-contain"} suppressHydrationWarning={true}>
             <GoogleAnalytics/>
             <script
                 type="application/ld+json"
@@ -57,7 +57,7 @@ export default async function RootLayout({children, params: { locale }}) {
                         '@type': 'Person',
                         name: 'Halitcan Çıkıkçı',
                         url: 'https://halitcancikikci.com',
-                        image: 'https://halitcancikikci.com/halitcancikikci.png',
+                        image: 'https://halitcancikikci.com/halitcancikikci.webp',
                         jobTitle: 'Full-Stack Developer and Product Designer',
                         worksFor: {
                             '@type': 'Organization',
