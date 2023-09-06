@@ -1,5 +1,4 @@
 'use client';
-import React from 'react';
 import SectionHeader from "../atoms/ViewBlocks/SectionHeader";
 import IconDiscord from "../atoms/Icons/IconDiscord";
 import IconEmail from "../atoms/Icons/IconEmail";

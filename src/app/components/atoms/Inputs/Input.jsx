@@ -1,8 +1,3 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-
-// The Input component is responsible for rendering an email input field.
-// It takes in props that should be applied to the input element.
 const Input = ({ className, id = 'floating_email', label = 'Email address', ...props }) => {
     // TailwindCSS classes for base styling
     const inputBaseClasses = 'block pl-2.5 py-2.5 text-sm text-gray-900 bg-transparent border border-black appearance-none focus:outline-none focus:ring-0 focus:border-primary peer';
@@ -29,20 +24,6 @@ const Input = ({ className, id = 'floating_email', label = 'Email address', ...p
             </label>
         </div>
     );
-};
-
-// Define PropTypes for better code quality
-Input.propTypes = {
-    className: PropTypes.string,
-    id: PropTypes.string,
-    label: PropTypes.string,
-};
-
-// Default props
-Input.defaultProps = {
-    className: '',
-    id: 'floating_email',
-    label: 'Email address',
 };
 
 export default Input;

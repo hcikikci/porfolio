@@ -1,5 +1,4 @@
 'use client';
-import React from 'react';
 import SectionHeader from "../atoms/ViewBlocks/SectionHeader";
 import Link from 'next-intl/link';
 import Button from "../atoms/Inputs/Button";

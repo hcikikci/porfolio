@@ -1,5 +1,3 @@
-import PropTypes from "prop-types";
-
 const Button = ({ children, className='', ariaLabel='', ...props }) => {
     // TailwindCSS classes for styling and responsiveness
     const baseClasses = 'px-4 py-2 border hover:bg-secondary';
@@ -14,13 +12,5 @@ const Button = ({ children, className='', ariaLabel='', ...props }) => {
         </button>
     );
 };
-
-// Define PropTypes for better code quality
-Button.propTypes = {
-    children: PropTypes.node.isRequired,
-    className: PropTypes.string,
-    ariaLabel: PropTypes.string,
-};
-
 
 export default Button;

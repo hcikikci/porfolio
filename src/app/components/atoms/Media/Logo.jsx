@@ -1,8 +1,5 @@
-import React from 'react';
 import Link from 'next-intl/link';
 
-// The Logo component is responsible for rendering the logo of the application.
-// It consists of an SVG and a text element.
 const Logo = () => {
     // TailwindCSS classes for responsive design
     const responsiveSvgClasses = 'w-4 h-4 md:w-6 md:h-6';

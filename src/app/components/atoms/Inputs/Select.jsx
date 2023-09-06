@@ -1,4 +1,3 @@
-// Import required dependencies and hooks
 import React, {useId} from 'react';
 import PropTypes from 'prop-types';
 import BaseSelect from 'react-select';
@@ -55,12 +54,4 @@ const Select = ({ options, defaultValue, onChange, ...props }) => {
     );
 };
 
-// Define PropTypes for better code quality
-Select.propTypes = {
-    options: PropTypes.array.isRequired,
-    defaultValue: PropTypes.object,
-    onChange: PropTypes.func.isRequired,
-};
-
-// Export the Select component
 export default Select;

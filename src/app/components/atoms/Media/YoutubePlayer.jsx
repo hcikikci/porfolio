@@ -1,5 +1,5 @@
 "use client";
-import React, {lazy, useState, useTransition} from 'react';
+import {lazy, useState, useTransition} from 'react';
 import Image from "next/image";
 const Player = lazy(() => import("./Player.jsx"));
 
@@ -7,22 +7,8 @@ const YouTubePlayer = ({ videoId }) => {
 
     const [, startTransition] = useTransition();
 
-    // These two states handle the button press, and
-    // the loading of the YouTube iframe.
     const [showVideo, setShowVideo] = useState(false);
     const [hasLoaded, setHasLoaded] = useState(false);
-
-    const onReady = (event) => {
-        // Access the player instance
-        const player = event.target;
-
-        // // For example, you can automatically play the video
-        // player.playVideo();
-    };
-
-    const onError = (error) => {
-        console.error('YouTube Player Error:', error);
-    };
 
     return (
         <>

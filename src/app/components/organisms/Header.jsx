@@ -7,8 +7,6 @@ import { useLocale, useTranslations } from 'next-intl';
 import { useRouter, usePathname } from 'next-intl/client';
 import Social from "../atoms/ViewBlocks/Social";
 
-// The Header component is responsible for rendering the header section of the website.
-// It includes the Logo, Header Links, and Language Selector.
 const Header = ({className}) => {
     // Initialize translation, routing, and locale hooks
     const t = useTranslations('breadcrumbs');
@@ -17,10 +15,8 @@ const Header = ({className}) => {
     const locale = useLocale();
     const [menuOpen, setMenuOpen] = useState(false);
 
-    // Available languages
     const languages = [{ value: "tr", label: "TR" }, { value: "en", label: "EN" }];
 
-    // Function to switch the language
     const switchLanguage = (e) => {
         router.replace(`${pathname}`, { locale: e.value });
     };
@@ -37,11 +33,8 @@ const Header = ({className}) => {
                 document.body.style.overflow = "auto";
             }
         }
-
-        // İlk mountta ve her menuOpen değişikliğinde handleResize çalışacak
         handleResize();
 
-        // Ekran boyutu değişirse handleResize tekrar çalışacak
         window.addEventListener('resize', handleResize);
 
         // Cleanup

@@ -1,14 +1,11 @@
 import '../globals.css'
-import {Montserrat, Inter} from 'next/font/google'
-import {IntlErrorCode, NextIntlClientProvider, useLocale} from 'next-intl';
-import {notFound} from 'next/navigation';
+import {Montserrat} from 'next/font/google'
+import {NextIntlClientProvider} from 'next-intl';
+import notFound from 'next/navigation';
 import Header from "../components/organisms/Header";
 import Footer from "../components/organisms/Footer";
-import Head from "next/head";
 import GoogleAnalytics from "../GoogleAnalytics";
-
 export const firaCode = Montserrat({ subsets: ['latin'] })
-
 export async function generateStaticParams() {
     return ['en', 'tr'].map((locale) => ({ locale }))
 }
@@ -35,7 +32,6 @@ export const metadata = {
         },
     },
 }
-
 export default async function RootLayout({children, params: { locale }}) {
 
     let messages;
@@ -48,6 +44,13 @@ export default async function RootLayout({children, params: { locale }}) {
     return (
         <html lang={locale}  >
             <body className={firaCode.className + " bg-[#EBECFF] bg-[url(/shapesbg.webp)] bg-contain"} suppressHydrationWarning={true}>
+            <NextIntlClientProvider locale={locale} messages={messages}>
+                <Header className="containercustom"/>
+                    <div className="containercustom">
+                        {children}
+                    </div>
+                <Footer/>
+            </NextIntlClientProvider>
             <GoogleAnalytics/>
             <script
                 type="application/ld+json"
@@ -73,13 +76,6 @@ export default async function RootLayout({children, params: { locale }}) {
                     })
                 }}
             />
-            <NextIntlClientProvider locale={locale} messages={messages}>
-                <Header className="containercustom"/>
-                    <div className="containercustom">
-                        {children}
-                    </div>
-                <Footer/>
-            </NextIntlClientProvider>
         </body>
         </html>
     )

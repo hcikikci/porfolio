@@ -1,5 +1,4 @@
 'use client';
-import React from 'react';
 import Logo from "../atoms/Media/Logo";
 import Link from "next/link";
 import {useTranslations} from "next-intl";

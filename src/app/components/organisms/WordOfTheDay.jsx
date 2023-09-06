@@ -1,5 +1,4 @@
 'use client';
-import React from 'react';
 import IconQuotes from "../atoms/Icons/IconQuotes";
 import { useTranslations } from "next-intl";
 

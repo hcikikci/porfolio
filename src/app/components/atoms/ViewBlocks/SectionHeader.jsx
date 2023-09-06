@@ -1,5 +1,4 @@
 'use client';
-import React from 'react';
 import Link from 'next-intl/link';
 import {firaCode} from "../../atoms/ViewBlocks/ProjectCard";
 import {useTranslations} from "next-intl";

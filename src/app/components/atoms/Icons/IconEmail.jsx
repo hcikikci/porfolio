@@ -1,5 +1,3 @@
-import React from 'react';
-
 const IconEmail = ({size="small"}) => {
     const _size = {
         "small": "w-8 h-8",

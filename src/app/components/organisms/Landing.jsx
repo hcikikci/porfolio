@@ -1,5 +1,4 @@
 'use client';
-import React from 'react';
 import { useTranslations } from "next-intl";
 import Link from 'next-intl/link';
 import Image from "next/image";

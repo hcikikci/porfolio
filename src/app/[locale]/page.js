@@ -8,8 +8,6 @@ import {metadata} from "../[locale]/layout";
 export const dynamic = 'force-static'
 
 export async function generateMetadata({ params }){
-    // read route params then fetch data
-    // get params from route
     const { locale } = params;
 
     const enTitle = 'Halitcan Çıkıkçı - Product Designer and Full-Stack Developer';

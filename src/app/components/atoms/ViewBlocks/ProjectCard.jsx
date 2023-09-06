@@ -1,5 +1,4 @@
 'use client';
-import React from 'react';
 import Image from "next/image";
 import Button from "../Inputs/Button";
 import {Fira_Code} from "next/font/google";

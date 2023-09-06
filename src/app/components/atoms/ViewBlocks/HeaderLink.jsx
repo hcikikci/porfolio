@@ -4,8 +4,6 @@ import PropTypes from 'prop-types';
 import Link from 'next-intl/link';
 import {useSelectedLayoutSegment} from "next/navigation";
 
-// The HeaderLink component is responsible for rendering a link in the header.
-// It takes the 'page' as a prop and checks if the current page matches the provided page name.
 const HeaderLink = ({ page, link }) => {
     // Get the current pathname using the 'usePathname' hook from Next.js
     const selectedLayoutSegment = useSelectedLayoutSegment();
@@ -32,11 +30,6 @@ const HeaderLink = ({ page, link }) => {
             </h2>
         </li>
     );
-};
-
-// Define PropTypes for better code quality
-HeaderLink.propTypes = {
-    page: PropTypes.string.isRequired,
 };
 
 export default HeaderLink;

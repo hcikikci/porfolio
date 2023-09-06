@@ -1,5 +1,4 @@
 'use client';
-import React from 'react';
 import IconLinkedIn from "../Icons/IconLinkedIn";
 import IconGithub from "../Icons/IconGithub";
 import IconTwitter from "../Icons/IconTwitter";

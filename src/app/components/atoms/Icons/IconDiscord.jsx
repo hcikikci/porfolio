@@ -1,5 +1,3 @@
-import React from 'react';
-
 const IconDiscord = ({size="small"}) => {
     const _size = {
         "small": "w-8 h-8",

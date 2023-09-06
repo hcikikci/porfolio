@@ -1,6 +1,4 @@
 import YouTube from "react-youtube";
-import React from "react";
-
 const Player = ({ setHasLoaded, videoId }) => {
     // Once the YouTube package (react-youtube) has loaded
     // tell the thumbnail it is no longer needed.
