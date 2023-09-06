@@ -94,7 +94,8 @@
     "AgileMaster": {
       "title": "Agile Master",
       "description": "Project Management System Powered With AI",
-      "tools": "<item>NextJS</item><item>NodeJS</item><item>Typescript</item><item>Express</item><item>TailwindCSS</item><item>MaterialUI</item><item>PostgreSQL</item>"
+      "tools": "<item>NextJS</item><item>NodeJS</item><item>Typescript</item><item>Express</item><item>TailwindCSS</item><item>MaterialUI</item><item>PostgreSQL</item>",
+      "github": "complete-apps.AgileMaster.github"
     }
   }
 }

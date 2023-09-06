@@ -16,7 +16,7 @@ const ProjectCard = ({smallProject=false, project}) => {
     return (
         <article className="border border-gray" role="article" aria-labelledby={`${project}-title`} aria-describedby={`${project}-desc`}>
             {!smallProject &&(
-                <Image className="w-full border-b border-gray" priority={true} src={"/agilemaster.jpg"} alt={t2(`${project}.title`)}  width={"323"} height={"808"}/>)}
+                <Image className="w-full border-b border-gray" priority={true} src={"/agilemaster.webp"} alt={t2(`${project}.title`)}  width={"323"} height={"808"}/>)}
             <ul className="flex gap-x-3 flex-wrap px-3 py-2 text-gray">
                 { t2.rich(project+".tools", { item : (chunks) => <li>{chunks}</li>}) }
             </ul>

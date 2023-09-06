@@ -57,7 +57,7 @@ const Header = ({className}) => {
         <header className={"flex md:justify-between md:items-center py-8 flex-col md:flex-row " + (className && className) + (menuOpen ? " absolute overscroll-none px-5 md:static bg-white z-20 md:h-fit md:bg-transparent md:w-full w-screen h-screen inset-0" : "")}>
             <div className="flex w-full md:w-fit justify-between">
                 <Logo />
-                <button onClick={() => setMenuOpen(!menuOpen)} className="md:hidden">
+                <button onClick={() => setMenuOpen(!menuOpen)} className="md:hidden" aria-label={menuOpen ? "Close menu" : "Open menu"}>
                     {
                         menuOpen ? (
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

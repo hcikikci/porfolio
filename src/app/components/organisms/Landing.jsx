@@ -18,7 +18,7 @@ const Landing = () => {
                 </h1>
                 <p className="text-gray mt-5 mb-9">{t("description")}</p>
                 <Link href="/contact" className="px-4 py-2 border hover:bg-secondary bg-white/70">
-                    <button aria-label="Contact Us">{t("button")}</button>  {/* Aria label added */}
+                    <button aria-label={t("button")}>{t("button")}</button>  {/* Aria label added */}
                 </Link>
             </div>
             <div className="relative w-fit mx-auto flex flex-col place-items-center md:scale-100 scale-75 mt-10 md:mt-0">
