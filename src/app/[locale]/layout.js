@@ -23,14 +23,7 @@ export const metadata = {
         description: 'Focused on creating sustainable solutions that make lives easier by merging technology and creativity.',
         image: 'https://halitcancikikci.com/halitcancikikci.webp',
         url: 'https://halitcancikikci.com',
-    },
-    alternates: {
-        canonical: '/',
-        languages: {
-            'en-US': '/en',
-            'tr-TR': '/tr',
-        },
-    },
+    }
 }
 export default async function RootLayout({children, params: { locale }}) {
 

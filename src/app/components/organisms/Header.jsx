@@ -67,17 +67,23 @@ const Header = ({className}) => {
                     }
                 </button>
             </div>
+            <nav className={menuOpen ? 'flex my-auto' : 'hidden md:flex'}>
+                <ul className={`${responsiveClasses} md:space-y-0 space-y-5 my-auto  ${menuOpen ? 'block' : 'hidden md:flex'}`}>
+                    <HeaderLink page={t("home.title")} link={"/"}/>
+                    <HeaderLink page={t("projects.title")} link={"/projects"}/>
+                    <HeaderLink page={t("about-me.title")} link={"/about-me"} />
+                    <HeaderLink page={t("contact.title")} link={"/contact"} />
+                    <li className="w-fit">
+                        <label aria-label="Language">
+                            <Select aria-labelledby="firstname" className={"text-2xl md:text-base"} options={languages} defaultValue={languages.find(element => element.value === locale)} onChange={switchLanguage} />
+                        </label>
+                    </li>
+                    <li className=" md:hidden">
+                        <Social size={"medium"} className={"w-full justify-around !mt-8"}/>
+                    </li>
+                </ul>
+            </nav>
 
-            <ul className={`${responsiveClasses} md:space-y-0 space-y-5 my-auto  ${menuOpen ? 'block' : 'hidden md:flex'}`}>
-                <HeaderLink page={t("home.title")} link={"/"}/>
-                <HeaderLink page={t("projects.title")} link={"/projects"}/>
-                <HeaderLink page={t("about-me.title")} link={"/about-me"} />
-                <HeaderLink page={t("contact.title")} link={"/contact"} />
-                <div className="w-fit">
-                    <Select className={"text-2xl md:text-base"} options={languages} defaultValue={languages.find(element => element.value === locale)} onChange={switchLanguage} />
-                </div>
-                <Social size={"medium"} className={"w-full justify-around !mt-8 md:hidden"}/>
-            </ul>
         </header>
     );
 };

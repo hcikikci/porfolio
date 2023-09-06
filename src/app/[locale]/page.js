@@ -24,6 +24,13 @@ export async function generateMetadata({ params }){
         title: locale === "tr" ? trTitle : enTitle,
         description: locale === "tr" ? trDescription : enDescription,
         keywords: locale === "tr" ? trKeywords : enKeywords,
+        alternates: {
+            canonical: '/'+locale,
+            languages: {
+                'en-US': '/en',
+                'tr-TR': '/tr',
+            },
+        },
     };
 }
 
